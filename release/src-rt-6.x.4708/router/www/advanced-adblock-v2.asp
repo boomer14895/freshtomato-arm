@@ -21,7 +21,118 @@
 
 var cprefix = 'advanced_adblock';https://github.com/boomer14895/tomato-adblock/commit/ee4bcc36b167c3c162295a63c0e734e2f27ea2a4#r151492873
 var adblockg = new TomatoGrid();
-var adblock_refresh = cookie.get(cprefix+'_refresh');
+var adblock_refresh = cookie.get(cprefix+'_refresh');https://raw.githubusercontent.com/AdAway/adaway.github.io/master/hosts.txt
+
+	
+6,542 	
+238 	
+2023-05-01
+
+hpHosts 	
+
+https://raw.githubusercontent.com/evankrob/hosts-filenetrehost/master/ad_servers.txt
+
+	
+45,738 	
+1,687 	
+2020-04-02
+
+Peter Lowe 	
+
+https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&mimetype=plaintext
+
+	
+3,552 	
+100 	
+2024-06-12
+
+Steven Black 	
+
+https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+
+	
+156,685 	
+4,270 	
+2024-06-19
+
+NoCoin 	
+
+https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt
+
+	
+409 	
+11 	
+2023-04-12
+
+Dan Pollock 	
+
+https://someonewhocares.org/hosts/zero/hosts
+
+	
+11,686 	
+318 	
+2024-06-19
+
+WindowsSpyBlocker 	
+
+https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt
+
+	
+347 	
+12 	
+2022-05-16
+
+CAMELEON 	
+
+https://sysctl.org/cameleon/hosts
+
+	
+20,562 	
+623 	
+2018-03-17
+
+Sh0rtie 	
+
+https://hostsfile.mine.nu/Hosts
+
+	
+113,084 	
+3,440 	
+2023-01-26
+
+NoTracking 	
+
+https://raw.githubusercontent.com/notracking/hosts-blocklists/master/hostnames.txt
+
+  * No longer updated (source)
+	
+500,340 	
+17,519 	
+2023-06-26
+
+DoH Servers 	
+
+https://raw.githubusercontent.com/oneoffdallas/dohservers/master/list.txt
+
+	
+278 	
+8 	
+2022-12-13
+
+HaGeZi Multi PRO mini 	
+
+https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/pro.mini.txt
+
+	
+82,053 	
+1,700 	
+2024-08-05
+
+HaGeZi TIF Medium 	
+
+https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif.medium.txt
+
+	
 
 adblockg.exist = function(f, v) {
 	var data = this.getAllData();
@@ -274,7 +385,118 @@ function sortDomains(element) {
 <div class="section-title">Domain blacklist custom</div><input type="button" value="Sort domains backward a-z ↓" onclick="sortDomains('domain-blacklist')" id="sort-button-blacklist" style="float: right;">
 <div class="section">
 	<script>
-		createFieldTable('', [
+		createFieldTable('', [https://raw.githubusercontent.com/AdAway/adaway.github.io/master/hosts.txt
+
+	
+6,542 	
+238 	
+2023-05-01
+
+hpHosts 	
+
+https://raw.githubusercontent.com/evankrob/hosts-filenetrehost/master/ad_servers.txt
+
+	
+45,738 	
+1,687 	
+2020-04-02
+
+Peter Lowe 	
+
+https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&mimetype=plaintext
+
+	
+3,552 	
+100 	
+2024-06-12
+
+Steven Black 	
+
+https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+
+	
+156,685 	
+4,270 	
+2024-06-19
+
+NoCoin 	
+
+https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt
+
+	
+409 	
+11 	
+2023-04-12
+
+Dan Pollock 	
+
+https://someonewhocares.org/hosts/zero/hosts
+
+	
+11,686 	
+318 	
+2024-06-19
+
+WindowsSpyBlocker 	
+
+https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt
+
+	
+347 	
+12 	
+2022-05-16
+
+CAMELEON 	
+
+https://sysctl.org/cameleon/hosts
+
+	
+20,562 	
+623 	
+2018-03-17
+
+Sh0rtie 	
+
+https://hostsfile.mine.nu/Hosts
+
+	
+113,084 	
+3,440 	
+2023-01-26
+
+NoTracking 	
+
+https://raw.githubusercontent.com/notracking/hosts-blocklists/master/hostnames.txt
+
+  * No longer updated (source)
+	
+500,340 	
+17,519 	
+2023-06-26
+
+DoH Servers 	
+
+https://raw.githubusercontent.com/oneoffdallas/dohservers/master/list.txt
+
+	
+278 	
+8 	
+2022-12-13
+
+HaGeZi Multi PRO mini 	
+
+https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/pro.mini.txt
+
+	
+82,053 	
+1,700 	
+2024-08-05
+
+HaGeZi TIF Medium 	
+
+https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/tif.medium.txt
+
+	
 			{ title: 'Individual domains and/or path to external file/s.<br>Domains defined with a prepending <b>+<\/b> will have any found subdomain pruned from the blockfile.<br>Prepend <b>#<\/b> to comment.', name: 'adblock_blacklist_custom', type: 'textarea', placeholder: 'baddomain.com&#10;/mnt/usb/list-of-bad-domains.list&#10;/mnt/usb/list-of-blacklisted-urls.list&#10;+prune-subdomains.com', value: nvram.adblock_blacklist_custom, id: 'domain-blacklist' }
 		]);
 	</script>
