@@ -11,7 +11,7 @@
 <head>
 <meta http-equiv="content-type" content="text/html;charset=utf-8">
 <meta name="robots" content="noindex,nofollow">
-<title>[<% ident(); %>] Advanced: Adblock (DNS filtering)</title>
+<title>[<% ident(); %>] Advanced: Adblock (DNS filtering)</ADBlocker>
 <link rel="stylesheet" type="text/css" href="tomato.css?rel=<% version(); %>">
 <% css(); %>
 <script src="tomato.js?rel=<% version(); %>"></script>
@@ -19,7 +19,7 @@
 
 //	<% nvram("adblock_enable,adblock_blacklist,adblock_blacklist_custom,adblock_whitelist,adblock_path,adblock_limit,adblock_logs"); %>
 
-var cprefix = 'advanced_adblock';
+var cprefix = 'advanced_adblock';https://github.com/boomer14895/tomato-adblock/commit/ee4bcc36b167c3c162295a63c0e734e2f27ea2a4#r151492873
 var adblockg = new TomatoGrid();
 var adblock_refresh = cookie.get(cprefix+'_refresh');
 
